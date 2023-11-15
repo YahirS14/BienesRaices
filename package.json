@@ -1,7 +1,7 @@
 {
   "name": "bienesraices",
   "private": true,
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Pagina Web de Bienes Raices usando React y SpringBoot",
   "type": "module",
   "scripts": {
@@ -25,7 +25,12 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-cache": "^1.1.3",
+    "gulp-imagemin": "^9.0.0",
+    "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
+    "gulp-webp": "^5.0.0",
     "sass": "^1.69.5",
     "vite": "^4.4.5"
   }

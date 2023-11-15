@@ -380,6 +380,34 @@ template {
   background-color: #333333;
   padding: 1rem 0 3rem 0;
 }
+.header.home {
+  background-image: url("/build/img/header.webp");
+  background-position: center center;
+  background-size: cover;
+}
+@media (min-width: 768px) {
+  .header.home {
+    min-height: 70rem;
+  }
+}
+@media (min-width: 768px) {
+  .header.home .container-header {
+    min-height: 70rem;
+  }
+}
+
+.container-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container-header h1 {
+  text-align: left;
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 2;
+  max-width: 60rem;
+}
 
 .slash {
   display: flex;
