@@ -1,0 +1,18 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.yellow-button {
+  @include m.button(v.$yellow, block);
+}
+
+.yellow-button-inline {
+  @include m.button(v.$yellow, inline-block);
+}
+
+.green-button {
+  @include m.button(v.$green, inline-block);
+}
+.see-all {
+  display: flex;
+  justify-content: end;
+}

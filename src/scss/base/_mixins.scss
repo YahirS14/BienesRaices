@@ -18,8 +18,23 @@
     @content;
   }
 }
-@mixin grid($columnas, $espaciado) {
+@mixin grid($columns, $separation) {
   display: grid;
-  gap: v.$espaciado;
-  grid-template-columns: repeat(v.$columnas, 1fr);
+  gap: $separation;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+@mixin button($bgColor, $display) {
+  background-color: $bgColor;
+  color: v.$white;
+  font-weight: v.$bold;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: calc(v.$separation / 2);
+  display: $display;
+
+  &:hover {
+    background-color: darken($bgColor, 5);
+  }
 }
